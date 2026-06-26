@@ -40,12 +40,12 @@ Built as part of my AWS SAA-C03 preparation and portfolio. Every concept was fir
 │  │            via group — no direct policies)  │      │
 │  │                                              │      │
 │  │  IAM Role: ec2-readonly-role                │      │
-│  │  └── Trust: EC2 service                     │      │
+│  │  └── Trust: IAM users (same account)                    │      │
 │  │  └── Policy: ReadOnlyAccess                 │      │
 │  │  └── STS AssumeRole (temporary credentials)│      │
 │  │                                              │      │
 │  │  Permission Boundary: developer-boundary    │      │
-│  │  └── Ceiling: S3 + CloudWatch only          │      │
+│  │  └── Ceiling: EC2 + CloudWatch only          │      │
 │  │  └── Cannot escalate beyond boundary        │      │
 │  │                                              │      │
 │  │  Custom Policies                            │      │
